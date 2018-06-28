@@ -2,7 +2,7 @@
 
 username="$1"
 password="$2"
-url=https://collaboration.msi.audi.com/confluence
+url="$5"
 content_id="$3"
 me=`basename "$0"`
 directory=$4
