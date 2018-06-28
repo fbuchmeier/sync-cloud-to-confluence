@@ -20,10 +20,16 @@ rclone config
 
 To upload all files in the current folder, run `sync-cloud-to-confluence.sh` with your Confluence Username, Confluence Password and Confluence PageId (can be obtained from the end of the URL when editing your page).
 
-Files from your cloud storage will be saved in `yourSourceDirectory` and then attached to `yourConfluencePageId`.
+Files from your cloud storage will be saved in `yourSourceDirectory` and then attached to `yourConfluencePageId` in `yourConfluenceInstance`.
+
+* `yourConfluenceUsername` - e.g. dave.daniels
+* `yourConfluencePassword` - e.g. kjlhwLJKHwljhe
+* `yourConfluencePageId` - e.g. 1382981372
+* `yourSourceDirectory` - e.g. /Users/dave.daniels/rocketbook
+* `yourConfluenceInstance` - e.g. https://confluence.daves-company.io
 
 ```bash
-./sync-cloud-to-confluence.sh yourConfluenceUsername yourConfluencePassword yourConfluencePageId yourSourceDirectory
+./sync-cloud-to-confluence.sh yourConfluenceUsername yourConfluencePassword yourConfluencePageId yourSourceDirectory yourConfluenceInstance`
 ```
 
 ## Restrictions
